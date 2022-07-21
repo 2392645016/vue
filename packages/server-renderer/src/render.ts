@@ -199,6 +199,7 @@ function renderComponentInner(node, isRoot, context) {
   ))
   normalizeRender(child)
 
+  // isDef(node.data) && isDef(node.data.directives)
   const resolve = () => {
     const childNode = child._render()
     childNode.parent = node
