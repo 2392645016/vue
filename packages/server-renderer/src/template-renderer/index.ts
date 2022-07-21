@@ -23,7 +23,7 @@ export type ClientManifest = {
   publicPath: string
   all: Array<string>
   initial: Array<string>
-  async: Array<string>
+  async?: Array<string>
   modules: {
     [id: string]: Array<number>
   }
